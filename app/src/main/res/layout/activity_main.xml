@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<ListView android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:transcriptMode="alwaysScroll"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent"/>-->
+    <WebView android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/seekY" />
+    <SeekBar
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekX"
+        android:layout_gravity="center_horizontal"
+        android:max="15"
+        android:layout_above="@+id/closeCon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="51dp" />
+    <SeekBar
+        android:paddingTop="20dp"
+        android:id="@+id/seekY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:max="15"
+        android:layout_above="@+id/seekX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/closeCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close Connection"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--<LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <EditText android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            android:layout_weight="1"/>
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_button"
+            android:layout_gravity="center_vertical"
+            android:text="send" />
+    </LinearLayout>-->
+
+</RelativeLayout>
